@@ -125,10 +125,10 @@ Python сообщает результаты Laravel; Laravel сохраняет
 Код, БД и рабочую библиотеку держать в файловой системе WSL.
 Планируемая структура репозитория:
 
-    apps/api/                   Laravel
-    apps/web/                   Vue
-    services/worker/            Python
-    services/realtime/          Fastify/Socket.IO
+    src/api/                   Laravel
+    src/web/                   Vue
+    src/worker/            Python
+    src/realtime/          Fastify/Socket.IO
     infra/nginx/                конфигурация gateway
     infra/docker/               Dockerfile и вспомогательные команды
     contracts/                  OpenAPI, JSON Schema, примеры контрактов
@@ -223,4 +223,5 @@ S06 — первый работающий ручной маршрут. Это п
 - [sd-scripts: датасеты](https://github.com/kohya-ss/sd-scripts/blob/main/docs/config_README-en.md)
 
 Документация меняется: при проверке профиля сохранять дату, версию/commit тренера и ссылку на конкретный источник.
+
 

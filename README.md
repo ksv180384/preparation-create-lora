@@ -17,7 +17,6 @@ Fastify/Socket.IO. Целевой адрес http://localhost:7676.
 
 ```sh
 cd /home/ksv180384/projects/preparation-create-lora.local
-git status --short
 docker --version
 docker compose version
 docker info
@@ -40,8 +39,27 @@ LM Studio и ComfyUI работают на Windows, URL задаются поз�
 не является Windows-хостом; использовать настроенный адрес (обычно host.docker.internal)
 и проверять его из Python-контейнера.
 
-## Структура
+## Целевая структура
 
-apps/api — Laravel; apps/web — Vue; services/worker — Python; services/realtime — Fastify.
-infra/docker и infra/nginx — инфраструктура; contracts — API/events; profiles — профили.
-scripts — команды обслуживания; docs — спецификации и решения. src/ сохранён как исходный пустой каталог.
+Весь код приложения размещается в подготовленной папке src:
+
+    src/
+      api/          Laravel
+      web/          Vue 3
+      worker/       Python
+      realtime/     Node/Fastify/Socket.IO
+    infra/          Dockerfile и Nginx
+    contracts/      Контракты API и событий
+    profiles/       Профили подготовки датасетов
+    scripts/        Команды обслуживания
+    docs/           Документация
+    compose.yaml
+    .env.example
+    README.md
+
+Старые пустые заготовки apps/ и services/ не являются целевыми путями; код в них не добавлять.
+
+## Правила работы ИИ
+
+См. [AGENTS.md](AGENTS.md): любые операции Git, включая status/diff/log, требуют отдельного явного разрешения на конкретную операцию. Правки файлов не разрешают коммит или push.
+
