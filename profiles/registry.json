@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "profiles": [
+    {
+      "profile_id": "universal-image-caption-v1",
+      "status": "unverified",
+      "validation_evidence": null
+    },
+    {
+      "profile_id": "flux1",
+      "status": "unverified",
+      "validation_evidence": null
+    },
+    {
+      "profile_id": "flux2-dev",
+      "status": "unverified",
+      "validation_evidence": null
+    },
+    {
+      "profile_id": "flux2-klein-4b",
+      "status": "unverified",
+      "validation_evidence": null
+    },
+    {
+      "profile_id": "flux2-klein-9b",
+      "status": "unverified",
+      "validation_evidence": null
+    },
+    {
+      "profile_id": "flux3-image-klein",
+      "status": "unverified",
+      "validation_evidence": null
+    },
+    {
+      "profile_id": "z-image-turbo",
+      "status": "unverified",
+      "validation_evidence": null
+    },
+    {
+      "profile_id": "qwen-image",
+      "status": "unverified",
+      "validation_evidence": null
+    }
+  ]
+}
